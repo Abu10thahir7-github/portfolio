@@ -1,0 +1,40 @@
+[
+  {
+    "route": "/",
+    "firstLoadUncompressedJsBytes": 508561,
+    "firstLoadChunkPaths": [
+      ".next\\static\\chunks\\3q5otk3kvhg4o.js",
+      ".next\\static\\chunks\\3hrbui0_-5jjq.js",
+      ".next\\static\\chunks\\0mgssp3t2ffv0.js",
+      ".next\\static\\chunks\\3137g14ddnpgn.js",
+      ".next\\static\\chunks\\20i2due_39ki0.js",
+      ".next\\static\\chunks\\1qa6x-yh8ls4v.js",
+      ".next\\static\\chunks\\22auria_u-ur-.js",
+      ".next\\static\\chunks\\turbopack-1byudk2ua9lp2.js"
+    ]
+  },
+  {
+    "route": "/_not-found",
+    "firstLoadUncompressedJsBytes": 452925,
+    "firstLoadChunkPaths": [
+      ".next\\static\\chunks\\3q5otk3kvhg4o.js",
+      ".next\\static\\chunks\\3137g14ddnpgn.js",
+      ".next\\static\\chunks\\20i2due_39ki0.js",
+      ".next\\static\\chunks\\1qa6x-yh8ls4v.js",
+      ".next\\static\\chunks\\22auria_u-ur-.js",
+      ".next\\static\\chunks\\turbopack-1byudk2ua9lp2.js"
+    ]
+  },
+  {
+    "route": "/portfolio/[slug]",
+    "firstLoadUncompressedJsBytes": 452925,
+    "firstLoadChunkPaths": [
+      ".next\\static\\chunks\\3q5otk3kvhg4o.js",
+      ".next\\static\\chunks\\3137g14ddnpgn.js",
+      ".next\\static\\chunks\\20i2due_39ki0.js",
+      ".next\\static\\chunks\\1qa6x-yh8ls4v.js",
+      ".next\\static\\chunks\\22auria_u-ur-.js",
+      ".next\\static\\chunks\\turbopack-1byudk2ua9lp2.js"
+    ]
+  }
+]
