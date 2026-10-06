@@ -8,7 +8,6 @@ import { site, projects } from './data'; // <- your existing file (the one you p
 
 // Normalize the base URL (no trailing slash, always https)
 export const SITE_URL = site.url.replace(/\/$/, '');
-console.log(SITE_URL);
 
 export const seoConfig = {
   siteUrl: SITE_URL,
@@ -27,7 +26,7 @@ export const seoConfig = {
     'Freelance Web Developer India',
     'MERN Stack Developer',
     'TypeScript Developer',
-    ...projects.flatMap((p) => p.technologies ?? []),
+    ...projects.flatMap(p => p.technologies ?? []),
   ],
   author: {
     name: site.name,
