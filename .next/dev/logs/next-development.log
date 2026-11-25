@@ -1,6 +1,8 @@
-{"timestamp":"00:00:11.675","source":"Server","level":"WARN","message":"⚠ The Edge Runtime is deprecated. You can use the \"nodejs\" runtime instead. Learn more: https://nextjs.org/docs/messages/edge-runtime-deprecated"}
-{"timestamp":"00:00:13.640","source":"Server","level":"LOG","message":""}
-{"timestamp":"00:00:16.659","source":"Server","level":"LOG","message":"○ Compiling / ..."}
-{"timestamp":"00:00:19.642","source":"Server","level":"LOG","message":"https://abuthahir.dev"}
-{"timestamp":"00:00:20.846","source":"Server","level":"LOG","message":"https://abuthahir.dev"}
-{"timestamp":"00:00:21.307","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:01.555","source":"Server","level":"WARN","message":"⚠ Turbopack's filesystem cache has been deleted because we previously detected an internal error in Turbopack. Builds or page loads may be slower as a result."}
+{"timestamp":"00:00:01.645","source":"Server","level":"WARN","message":"⚠ The Edge Runtime is deprecated. You can use the \"nodejs\" runtime instead. Learn more: https://nextjs.org/docs/messages/edge-runtime-deprecated"}
+{"timestamp":"00:00:01.952","source":"Server","level":"LOG","message":""}
+{"timestamp":"00:00:08.662","source":"Browser","level":"INFO","message":"Download the React DevTools for a better development experience: https://react.dev/link/react-devtools"}
+{"timestamp":"00:00:08.973","source":"Browser","level":"WARN","message":"Image with src \"/_next/static/media/hero-portrait.2_7pduq96m7d9.webp\" was detected as the Largest Contentful Paint (LCP). Please add the `loading=\"eager\"` property if this image is above the fold.\nRead more: https://nextjs.org/docs/app/api-reference/components/image#loading"}
+{"timestamp":"00:00:08.973","source":"Browser","level":"WARN","message":"Image with src \"/_next/static/media/hero-portrait.2_7pduq96m7d9.webp\" has \"fill\" and parent element with invalid \"position\". Provided \"static\" should be one of absolute,fixed,relative."}
+{"timestamp":"00:00:09.254","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"/_next/static/media/hero-portrait.2_7pduq96m7d9.webp\\\" was detected as the Largest Contentful Paint (LCP). Please add the `loading=\\\"eager\\\"` property if this image is above the fold.\\nRead more: https://nextjs.org/docs/app/api-reference/components/image#loading\\u001b[39m\""}
+{"timestamp":"00:00:09.255","source":"Server","level":"WARN","message":"[browser] \"\\u001b[33mImage with src \\\"/_next/static/media/hero-portrait.2_7pduq96m7d9.webp\\\" has \\\"fill\\\" and parent element with invalid \\\"position\\\". Provided \\\"static\\\" should be one of absolute,fixed,relative.\\u001b[39m\""}
