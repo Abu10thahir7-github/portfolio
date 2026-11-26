@@ -1008,11 +1008,12 @@ __turbopack_context__.s([
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.3.0_@babel+core@7.2_af97c129856baaa88abbba90082084d1/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react-jsx-dev-runtime.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.3.0_@babel+core@7.2_af97c129856baaa88abbba90082084d1/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$1$2e$31$2e$0_react$40$19$2e$2$2e$8$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/lucide-react@1.31.0_react@19.2.8/node_modules/lucide-react/dist/esm/icons/arrow-up-right.mjs [app-ssr] (ecmascript) <export default as ArrowUpRight>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$1$2e$31$2e$0_react$40$19$2e$2$2e$8$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$star$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__Star$3e$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/lucide-react@1.31.0_react@19.2.8/node_modules/lucide-react/dist/esm/icons/star.mjs [app-ssr] (ecmascript) <export default as Star>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/src/lib/data.ts [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.3.0_@babel+core@7.2_af97c129856baaa88abbba90082084d1/node_modules/next/image.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/.pnpm/next@16.3.0_@babel+core@7.2_af97c129856baaa88abbba90082084d1/node_modules/next/dist/client/app-dir/link.js [app-ssr] (ecmascript)");
-"use client";
+'use client';
 ;
 ;
 ;
@@ -1020,15 +1021,15 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$ne
 ;
 ;
 const filters = [
-    "All",
-    "Web Design",
-    "Web Development",
-    "Applications"
+    'All',
+    'UI/UX',
+    'Web',
+    'Applications'
 ];
 function Portfolio() {
-    const [active, setActive] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("All");
+    const [active, setActive] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('All');
     const visible = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useMemo"])(()=>{
-        const filtered = active === "All" ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["projects"] : __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["projects"].filter((p)=>p.category === active);
+        const filtered = active === 'All' ? __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["projects"] : __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["projects"].filter((p)=>p.categories.includes(active));
         // Featured projects surface first within the current filter
         return [
             ...filtered
@@ -1051,7 +1052,7 @@ function Portfolio() {
                                 children: "03 · Selected Work"
                             }, void 0, false, {
                                 fileName: "[project]/src/components/Portfolio.tsx",
-                                lineNumber: 34,
+                                lineNumber: 30,
                                 columnNumber: 11
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
@@ -1061,61 +1062,64 @@ function Portfolio() {
                                     "My ",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "text-accent",
-                                        children: "Portfolio"
+                                        children: "Work"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Portfolio.tsx",
-                                        lineNumber: 39,
+                                        lineNumber: 32,
                                         columnNumber: 16
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Portfolio.tsx",
-                                lineNumber: 35,
+                                lineNumber: 31,
                                 columnNumber: 11
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/src/components/Portfolio.tsx",
-                        lineNumber: 33,
+                        lineNumber: 29,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex  gap-2 rounded-full border border-border bg-surface p-1.5 w-full md:w-fit overflow-auto",
+                        className: "flex gap-2 rounded-full border border-border bg-surface p-1.5 w-full md:w-fit overflow-auto",
                         role: "tablist",
                         "aria-label": "Filter projects by category",
                         children: filters.map((f)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                 role: "tab",
                                 "aria-selected": active === f,
                                 onClick: ()=>setActive(f),
-                                className: `rounded-full text-nowrap px-4 py-2 text-sm font-medium transition-colors ${active === f ? "bg-accent text-black" : "text-muted hover:text-foreground"}`,
+                                className: `rounded-full text-nowrap px-4 py-2 text-sm font-medium transition-colors ${active === f ? 'bg-accent text-black' : 'text-muted hover:text-foreground'}`,
                                 children: f
                             }, f, false, {
                                 fileName: "[project]/src/components/Portfolio.tsx",
-                                lineNumber: 49,
+                                lineNumber: 42,
                                 columnNumber: 13
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/src/components/Portfolio.tsx",
-                        lineNumber: 43,
+                        lineNumber: 36,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/components/Portfolio.tsx",
-                lineNumber: 32,
+                lineNumber: 28,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                 className: "grid gap-6 sm:grid-cols-2 lg:grid-cols-3",
-                children: visible.map((project)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
+                children: visible.map((project)=>{
+                    const caseStudy = (0, __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$lib$2f$data$2e$ts__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["hasCaseStudy"])(project);
+                    const hasLive = !!project.link;
+                    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
                         className: "group overflow-hidden rounded-2xl border border-border bg-surface transition-colors hover:border-accent-dim",
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                href: project.link || '#',
-                                target: project.link ? "_blank" : "_self",
-                                rel: project.link ? "noopener noreferrer" : undefined,
-                                "aria-label": `Visit ${project.name} project`,
-                                className: "relative flex h-[250px] items-center justify-center  text-center font-display text-2xl font-bold text-white/90",
+                                href: caseStudy ? `/work/${project.slug}` : project.link || '#',
+                                target: !caseStudy && hasLive ? '_blank' : '_self',
+                                rel: !caseStudy && hasLive ? 'noopener noreferrer' : undefined,
+                                "aria-label": `${caseStudy ? 'View case study for' : 'Visit'} ${project.name}`,
+                                className: "relative flex h-[250px] items-center justify-center text-center font-display text-2xl font-bold text-white/90",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                         src: project.image,
@@ -1125,8 +1129,8 @@ function Portfolio() {
                                         className: "object-cover"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Portfolio.tsx",
-                                        lineNumber: 82,
-                                        columnNumber: 15
+                                        lineNumber: 74,
+                                        columnNumber: 17
                                     }, this),
                                     project.featured && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                         className: "absolute left-3 top-3 inline-flex items-center gap-1 rounded-full bg-black/40 px-2.5 py-1 text-[11px] font-medium text-accent backdrop-blur-sm",
@@ -1137,21 +1141,21 @@ function Portfolio() {
                                                 "aria-hidden": true
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Portfolio.tsx",
-                                                lineNumber: 85,
-                                                columnNumber: 19
+                                                lineNumber: 83,
+                                                columnNumber: 21
                                             }, this),
                                             "Featured"
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Portfolio.tsx",
-                                        lineNumber: 84,
-                                        columnNumber: 17
+                                        lineNumber: 82,
+                                        columnNumber: 19
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Portfolio.tsx",
-                                lineNumber: 73,
-                                columnNumber: 13
+                                lineNumber: 67,
+                                columnNumber: 15
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "p-5",
@@ -1164,76 +1168,106 @@ function Portfolio() {
                                                 children: project.name
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Portfolio.tsx",
-                                                lineNumber: 93,
-                                                columnNumber: 17
+                                                lineNumber: 91,
+                                                columnNumber: 19
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                                 className: "shrink-0 font-mono-tech text-xs text-muted",
                                                 children: project.year
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/Portfolio.tsx",
-                                                lineNumber: 94,
-                                                columnNumber: 17
+                                                lineNumber: 92,
+                                                columnNumber: 19
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/Portfolio.tsx",
-                                        lineNumber: 92,
-                                        columnNumber: 15
+                                        lineNumber: 90,
+                                        columnNumber: 17
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                        className: "mt-1 text-sm text-muted",
+                                        className: "mt-1 line-clamp-2 text-sm text-muted",
                                         children: project.description
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/Portfolio.tsx",
-                                        lineNumber: 98,
-                                        columnNumber: 15
-                                    }, this),
-                                    project.technologies?.length ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
-                                        className: "mt-4 flex flex-wrap gap-1.5",
-                                        "aria-label": "Technologies used",
-                                        children: project.technologies.map((tech)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                                className: "rounded-full border border-border bg-surface-2 px-2.5 py-1 text-[11px] font-mono-tech text-muted",
-                                                children: tech
-                                            }, tech, false, {
-                                                fileName: "[project]/src/components/Portfolio.tsx",
-                                                lineNumber: 103,
-                                                columnNumber: 21
-                                            }, this))
-                                    }, void 0, false, {
-                                        fileName: "[project]/src/components/Portfolio.tsx",
-                                        lineNumber: 101,
+                                        lineNumber: 94,
                                         columnNumber: 17
-                                    }, this) : null,
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "mt-4 inline-block rounded-full bg-accent-soft px-3 py-1 text-xs font-medium text-accent",
-                                        children: project.category
-                                    }, void 0, false, {
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "mt-4 flex items-center justify-between border-t border-border pt-4 text-sm font-medium",
+                                        children: [
+                                            caseStudy ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
+                                                href: `/work/${project.slug}`,
+                                                className: "inline-flex items-center gap-1 text-accent hover:underline",
+                                                children: [
+                                                    "View Case Study ",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$1$2e$31$2e$0_react$40$19$2e$2$2e$8$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
+                                                        size: 14,
+                                                        "aria-hidden": true
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/Portfolio.tsx",
+                                                        lineNumber: 106,
+                                                        columnNumber: 39
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/Portfolio.tsx",
+                                                lineNumber: 102,
+                                                columnNumber: 21
+                                            }, this) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {}, void 0, false, {
+                                                fileName: "[project]/src/components/Portfolio.tsx",
+                                                lineNumber: 109,
+                                                columnNumber: 21
+                                            }, this),
+                                            hasLive && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                href: project.link,
+                                                target: "_blank",
+                                                rel: "noopener noreferrer",
+                                                className: "inline-flex items-center gap-1 text-muted hover:text-foreground",
+                                                children: [
+                                                    "Live Site ",
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$1$2e$31$2e$0_react$40$19$2e$2$2e$8$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$up$2d$right$2e$mjs__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowUpRight$3e$__["ArrowUpRight"], {
+                                                        size: 14,
+                                                        "aria-hidden": true
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/Portfolio.tsx",
+                                                        lineNumber: 119,
+                                                        columnNumber: 33
+                                                    }, this)
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "[project]/src/components/Portfolio.tsx",
+                                                lineNumber: 113,
+                                                columnNumber: 21
+                                            }, this)
+                                        ]
+                                    }, void 0, true, {
                                         fileName: "[project]/src/components/Portfolio.tsx",
-                                        lineNumber: 113,
-                                        columnNumber: 15
+                                        lineNumber: 100,
+                                        columnNumber: 17
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/Portfolio.tsx",
-                                lineNumber: 91,
-                                columnNumber: 13
+                                lineNumber: 89,
+                                columnNumber: 15
                             }, this)
                         ]
                     }, project.slug, true, {
                         fileName: "[project]/src/components/Portfolio.tsx",
-                        lineNumber: 68,
-                        columnNumber: 11
-                    }, this))
+                        lineNumber: 63,
+                        columnNumber: 13
+                    }, this);
+                })
             }, void 0, false, {
                 fileName: "[project]/src/components/Portfolio.tsx",
-                lineNumber: 66,
+                lineNumber: 57,
                 columnNumber: 7
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/src/components/Portfolio.tsx",
-        lineNumber: 27,
+        lineNumber: 23,
         columnNumber: 5
     }, this);
 }
@@ -1868,6 +1902,8 @@ __turbopack_context__.s([
     ()=>education,
     "experience",
     ()=>experience,
+    "hasCaseStudy",
+    ()=>hasCaseStudy,
     "heroStack",
     ()=>heroStack,
     "nav",
@@ -1904,29 +1940,29 @@ const site = {
 };
 const stats = [
     {
-        label: "Experience",
-        value: "2+ Years"
+        label: 'Experience',
+        value: '2+ Years'
     },
     {
-        label: "Projects",
-        value: "15+"
+        label: 'Projects',
+        value: '15+'
     },
     {
-        label: "Tech Stack",
-        value: "10+"
+        label: 'Tech Stack',
+        value: '10+'
     },
     {
-        label: "Specialty",
-        value: "Frontend"
+        label: 'Specialty',
+        value: 'Frontend'
     }
 ];
 const heroStack = [
-    "React",
-    "Next.js",
-    "TypeScript",
-    "Node.js",
-    "MongoDB",
-    "Tailwind CSS"
+    'React',
+    'Next.js',
+    'TypeScript',
+    'Node.js',
+    'MongoDB',
+    'Tailwind CSS'
 ];
 const services = [
     {
@@ -2138,8 +2174,21 @@ const projects = [
         slug: 'score90x',
         name: 'Score90X',
         image: '/images/tools-image/scoreX90.webp',
+        gallery: [
+            '/images/tools-image/scoreX90.webp',
+            '/images/soccer90x/soccer-home-page.png',
+            '/images/soccer90x/2.png',
+            '/images/soccer90x/3.png',
+            '/images/soccer90x/4.png',
+            '/images/soccer90x/5.png',
+            '/images/soccer90x/6.png',
+            '/images/soccer90x/7.png'
+        ],
         description: 'Football platform providing live match scores, fixtures, standings and football-focused information.',
-        category: 'Applications',
+        categories: [
+            'UI/UX',
+            'Applications'
+        ],
         color: '#0ea5e9',
         year: '2026',
         technologies: [
@@ -2149,14 +2198,209 @@ const projects = [
             'Football API'
         ],
         featured: true,
-        link: 'https://world-cup-score90-x.vercel.app'
+        link: 'https://world-cup-score90-x.vercel.app',
+        caseStudy: {
+            role: 'UI/UX Designer & Frontend Developer',
+            duration: '4 weeks',
+            tools: [
+                'Figma',
+                'Next.js',
+                'TypeScript',
+                'Tailwind CSS'
+            ],
+            stack: [
+                {
+                    group: 'Frontend',
+                    items: [
+                        'Next.js',
+                        'TypeScript',
+                        'Tailwind CSS'
+                    ]
+                },
+                {
+                    group: 'Data & APIs',
+                    items: [
+                        'Football API',
+                        'REST'
+                    ]
+                },
+                {
+                    group: 'Design',
+                    items: [
+                        'Figma'
+                    ]
+                },
+                {
+                    group: 'Tools & Deployment',
+                    items: [
+                        'Git',
+                        'GitHub',
+                        'VS Code',
+                        'Vercel'
+                    ]
+                }
+            ],
+            sections: {
+                overview: [
+                    {
+                        title: 'Introduction & Objectives',
+                        text: 'What the product is and what it should achieve.'
+                    },
+                    {
+                        title: 'My Role',
+                        list: [
+                            'UX research',
+                            'UI design',
+                            'Frontend development'
+                        ]
+                    },
+                    {
+                        title: 'Scope',
+                        text: 'Web app, mobile-first, live scores and standings.'
+                    }
+                ],
+                research: [
+                    {
+                        title: 'Problem Statement',
+                        text: 'Fans have to check several apps for scores.'
+                    },
+                    {
+                        title: 'Competitor Analysis',
+                        list: [
+                            'What app A does well',
+                            'Where app B falls short'
+                        ]
+                    },
+                    {
+                        title: 'User Personas & Pain Points',
+                        list: [
+                            'Casual fan: wants quick scores',
+                            'Hardcore fan: wants stats'
+                        ]
+                    }
+                ],
+                ux: [
+                    {
+                        title: 'User Flow',
+                        images: [
+                            '/images/soccer90x/Score90X-User-Flow-Diagram.png'
+                        ]
+                    },
+                    {
+                        title: 'Low-fidelity Wireframes',
+                        images: [
+                            '/images/soccer90x/Score90X-Wireframes.png'
+                        ]
+                    }
+                ],
+                ui: [
+                    {
+                        title: 'Color Palette',
+                        colors: [
+                            {
+                                name: 'Accent',
+                                hex: '#22c55e'
+                            },
+                            {
+                                name: 'Background',
+                                hex: '#0b1220'
+                            }
+                        ]
+                    },
+                    {
+                        title: 'Typography',
+                        text: 'Fonts used and why.'
+                    },
+                    {
+                        title: 'High-fidelity Screens',
+                        images: [
+                            '/images/case/score90x-ui-1.webp',
+                            '/images/case/score90x-ui-2.webp'
+                        ]
+                    }
+                ],
+                prototype: [
+                    {
+                        title: 'Interactive Prototype',
+                        text: 'Flows and transitions covered in the Figma prototype.'
+                    },
+                    {
+                        title: 'Usability Testing',
+                        text: 'Who tested it and what they said.'
+                    },
+                    {
+                        title: 'Design Improvements',
+                        list: [
+                            'Changed X because of Y'
+                        ]
+                    }
+                ],
+                development: [
+                    {
+                        title: 'Technology Stack',
+                        list: [
+                            'Next.js',
+                            'TypeScript',
+                            'Football API'
+                        ]
+                    },
+                    {
+                        title: 'Architecture & Components',
+                        text: 'How the project is structured.'
+                    },
+                    {
+                        title: 'Performance & Accessibility',
+                        list: [
+                            'Image optimization',
+                            'Keyboard navigation'
+                        ]
+                    }
+                ],
+                deployment: [
+                    {
+                        title: 'Testing',
+                        list: [
+                            'Cross-device testing',
+                            'Browser compatibility'
+                        ]
+                    },
+                    {
+                        title: 'Deployment',
+                        text: 'Deployed on Vercel.'
+                    }
+                ],
+                conclusion: [
+                    {
+                        title: 'Challenges & Solutions',
+                        text: 'Hardest problem and how you solved it.'
+                    },
+                    {
+                        title: 'Key Learnings',
+                        list: [
+                            'Lesson 1',
+                            'Lesson 2'
+                        ]
+                    },
+                    {
+                        title: 'Future Improvements',
+                        list: [
+                            'Push notifications',
+                            'Dark/light themes'
+                        ]
+                    }
+                ]
+            }
+        }
     },
     {
         slug: 'velonto-food-delivery',
         name: 'Velonto Food Delivery',
         image: '/images/tools-image/velonto.webp',
         description: 'Food delivery platform featuring restaurant discovery, food browsing and ordering experiences.',
-        category: 'Web Development',
+        categories: [
+            'UI/UX',
+            'Web'
+        ],
         color: '#f97316',
         year: '2024',
         technologies: [
@@ -2166,14 +2410,179 @@ const projects = [
             'MongoDB'
         ],
         featured: true,
-        link: 'https://velonto.vercel.app'
+        link: 'https://velonto.vercel.app',
+        figma: 'https://www.figma.com/proto/...',
+        behance: 'https://www.behance.net/gallery/...',
+        caseStudy: {
+            role: 'UI/UX Designer & Frontend Developer',
+            duration: '4 weeks',
+            tools: [
+                'Figma',
+                'Next.js',
+                'TypeScript',
+                'Tailwind CSS'
+            ],
+            sections: {
+                overview: [
+                    {
+                        title: 'Introduction & Objectives',
+                        text: 'What the product is and what it should achieve.'
+                    },
+                    {
+                        title: 'My Role',
+                        list: [
+                            'UX research',
+                            'UI design',
+                            'Frontend development'
+                        ]
+                    },
+                    {
+                        title: 'Scope',
+                        text: 'Web app, mobile-first, live scores and standings.'
+                    }
+                ],
+                research: [
+                    {
+                        title: 'Problem Statement',
+                        text: 'Fans have to check several apps for scores.'
+                    },
+                    {
+                        title: 'Competitor Analysis',
+                        list: [
+                            'What app A does well',
+                            'Where app B falls short'
+                        ]
+                    },
+                    {
+                        title: 'User Personas & Pain Points',
+                        list: [
+                            'Casual fan: wants quick scores',
+                            'Hardcore fan: wants stats'
+                        ]
+                    }
+                ],
+                ux: [
+                    {
+                        title: 'User Flow',
+                        images: [
+                            '/images/case/score90x-flow.webp'
+                        ]
+                    },
+                    {
+                        title: 'Low-fidelity Wireframes',
+                        images: [
+                            '/images/case/score90x-wire.webp'
+                        ]
+                    }
+                ],
+                ui: [
+                    {
+                        title: 'Color Palette',
+                        colors: [
+                            {
+                                name: 'Accent',
+                                hex: '#22c55e'
+                            },
+                            {
+                                name: 'Background',
+                                hex: '#0b1220'
+                            }
+                        ]
+                    },
+                    {
+                        title: 'Typography',
+                        text: 'Fonts used and why.'
+                    },
+                    {
+                        title: 'High-fidelity Screens',
+                        images: [
+                            '/images/case/score90x-ui-1.webp',
+                            '/images/case/score90x-ui-2.webp'
+                        ]
+                    }
+                ],
+                prototype: [
+                    {
+                        title: 'Interactive Prototype',
+                        text: 'Flows and transitions covered in the Figma prototype.'
+                    },
+                    {
+                        title: 'Usability Testing',
+                        text: 'Who tested it and what they said.'
+                    },
+                    {
+                        title: 'Design Improvements',
+                        list: [
+                            'Changed X because of Y'
+                        ]
+                    }
+                ],
+                development: [
+                    {
+                        title: 'Technology Stack',
+                        list: [
+                            'Next.js',
+                            'TypeScript',
+                            'Football API'
+                        ]
+                    },
+                    {
+                        title: 'Architecture & Components',
+                        text: 'How the project is structured.'
+                    },
+                    {
+                        title: 'Performance & Accessibility',
+                        list: [
+                            'Image optimization',
+                            'Keyboard navigation'
+                        ]
+                    }
+                ],
+                deployment: [
+                    {
+                        title: 'Testing',
+                        list: [
+                            'Cross-device testing',
+                            'Browser compatibility'
+                        ]
+                    },
+                    {
+                        title: 'Deployment',
+                        text: 'Deployed on Vercel.'
+                    }
+                ],
+                conclusion: [
+                    {
+                        title: 'Challenges & Solutions',
+                        text: 'Hardest problem and how you solved it.'
+                    },
+                    {
+                        title: 'Key Learnings',
+                        list: [
+                            'Lesson 1',
+                            'Lesson 2'
+                        ]
+                    },
+                    {
+                        title: 'Future Improvements',
+                        list: [
+                            'Push notifications',
+                            'Dark/light themes'
+                        ]
+                    }
+                ]
+            }
+        }
     },
     {
         slug: 'adidas-gsap-website',
         name: 'Adidas GSAP Website',
         image: '/images/tools-image/adidas.webp',
         description: 'Animation-focused concept website featuring smooth interactions and modern motion design.',
-        category: 'Web Development',
+        categories: [
+            'UI/UX',
+            'Web'
+        ],
         color: '#111827',
         year: '2025',
         technologies: [
@@ -2183,14 +2592,177 @@ const projects = [
             'CSS'
         ],
         featured: true,
-        link: 'https://gsap-addidas-web.vercel.app'
+        link: 'https://gsap-addidas-web.vercel.app',
+        caseStudy: {
+            role: 'UI/UX Designer & Frontend Developer',
+            duration: '4 weeks',
+            tools: [
+                'Figma',
+                'Next.js',
+                'TypeScript',
+                'Tailwind CSS'
+            ],
+            sections: {
+                overview: [
+                    {
+                        title: 'Introduction & Objectives',
+                        text: 'What the product is and what it should achieve.'
+                    },
+                    {
+                        title: 'My Role',
+                        list: [
+                            'UX research',
+                            'UI design',
+                            'Frontend development'
+                        ]
+                    },
+                    {
+                        title: 'Scope',
+                        text: 'Web app, mobile-first, live scores and standings.'
+                    }
+                ],
+                research: [
+                    {
+                        title: 'Problem Statement',
+                        text: 'Fans have to check several apps for scores.'
+                    },
+                    {
+                        title: 'Competitor Analysis',
+                        list: [
+                            'What app A does well',
+                            'Where app B falls short'
+                        ]
+                    },
+                    {
+                        title: 'User Personas & Pain Points',
+                        list: [
+                            'Casual fan: wants quick scores',
+                            'Hardcore fan: wants stats'
+                        ]
+                    }
+                ],
+                ux: [
+                    {
+                        title: 'User Flow',
+                        images: [
+                            '/images/case/score90x-flow.webp'
+                        ]
+                    },
+                    {
+                        title: 'Low-fidelity Wireframes',
+                        images: [
+                            '/images/case/score90x-wire.webp'
+                        ]
+                    }
+                ],
+                ui: [
+                    {
+                        title: 'Color Palette',
+                        colors: [
+                            {
+                                name: 'Accent',
+                                hex: '#22c55e'
+                            },
+                            {
+                                name: 'Background',
+                                hex: '#0b1220'
+                            }
+                        ]
+                    },
+                    {
+                        title: 'Typography',
+                        text: 'Fonts used and why.'
+                    },
+                    {
+                        title: 'High-fidelity Screens',
+                        images: [
+                            '/images/case/score90x-ui-1.webp',
+                            '/images/case/score90x-ui-2.webp'
+                        ]
+                    }
+                ],
+                prototype: [
+                    {
+                        title: 'Interactive Prototype',
+                        text: 'Flows and transitions covered in the Figma prototype.'
+                    },
+                    {
+                        title: 'Usability Testing',
+                        text: 'Who tested it and what they said.'
+                    },
+                    {
+                        title: 'Design Improvements',
+                        list: [
+                            'Changed X because of Y'
+                        ]
+                    }
+                ],
+                development: [
+                    {
+                        title: 'Technology Stack',
+                        list: [
+                            'Next.js',
+                            'TypeScript',
+                            'Football API'
+                        ]
+                    },
+                    {
+                        title: 'Architecture & Components',
+                        text: 'How the project is structured.'
+                    },
+                    {
+                        title: 'Performance & Accessibility',
+                        list: [
+                            'Image optimization',
+                            'Keyboard navigation'
+                        ]
+                    }
+                ],
+                deployment: [
+                    {
+                        title: 'Testing',
+                        list: [
+                            'Cross-device testing',
+                            'Browser compatibility'
+                        ]
+                    },
+                    {
+                        title: 'Deployment',
+                        text: 'Deployed on Vercel.'
+                    }
+                ],
+                conclusion: [
+                    {
+                        title: 'Challenges & Solutions',
+                        text: 'Hardest problem and how you solved it.'
+                    },
+                    {
+                        title: 'Key Learnings',
+                        list: [
+                            'Lesson 1',
+                            'Lesson 2'
+                        ]
+                    },
+                    {
+                        title: 'Future Improvements',
+                        list: [
+                            'Push notifications',
+                            'Dark/light themes'
+                        ]
+                    }
+                ]
+            }
+        }
     },
     {
         slug: 'talk-tower',
         name: 'Talk Tower',
         image: '/images/tools-image/talk-tower.webp',
         description: 'Education-focused platform concept designed for interactive learning and engaging digital experiences.',
-        category: 'Web Design',
+        categories: [
+            'UI/UX',
+            'Web'
+        ],
         color: '#8b5cf6',
         year: '2025',
         technologies: [
@@ -2205,7 +2777,10 @@ const projects = [
         name: 'Flyocean Travels',
         image: '/images/tools-image/flyocean.webp',
         description: 'Modern travel and tourism website designed to showcase destinations, services and travel experiences.',
-        category: 'Web Design',
+        categories: [
+            'UI/UX',
+            'Web'
+        ],
         color: '#06b6d4',
         year: '2025',
         technologies: [
@@ -2220,7 +2795,10 @@ const projects = [
         name: 'Trendzio Shop',
         image: '/images/tools-image/trendzio.webp',
         description: 'E-commerce platform with product browsing, shopping cart functionality and a modern shopping experience.',
-        category: 'Web Development',
+        categories: [
+            'UI/UX',
+            'Web'
+        ],
         color: '#22c55e',
         year: '2025',
         technologies: [
@@ -2236,7 +2814,10 @@ const projects = [
         name: 'Bismi Events',
         image: '/images/tools-image/bismi-events.webp',
         description: 'Event management website concept for discovering, planning and booking event services.',
-        category: 'Web Design',
+        categories: [
+            'UI/UX',
+            'Web'
+        ],
         color: '#ef4444',
         year: '2024',
         technologies: [
@@ -2277,6 +2858,7 @@ const nav = [
         href: '#contact'
     }
 ];
+const hasCaseStudy = (p)=>p.categories.includes('UI/UX');
 }),
 ];
 

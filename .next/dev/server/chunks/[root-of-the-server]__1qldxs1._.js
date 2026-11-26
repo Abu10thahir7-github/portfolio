@@ -143,6 +143,8 @@ __turbopack_context__.s([
     ()=>education,
     "experience",
     ()=>experience,
+    "hasCaseStudy",
+    ()=>hasCaseStudy,
     "heroStack",
     ()=>heroStack,
     "nav",
@@ -179,29 +181,29 @@ const site = {
 };
 const stats = [
     {
-        label: "Experience",
-        value: "2+ Years"
+        label: 'Experience',
+        value: '2+ Years'
     },
     {
-        label: "Projects",
-        value: "15+"
+        label: 'Projects',
+        value: '15+'
     },
     {
-        label: "Tech Stack",
-        value: "10+"
+        label: 'Tech Stack',
+        value: '10+'
     },
     {
-        label: "Specialty",
-        value: "Frontend"
+        label: 'Specialty',
+        value: 'Frontend'
     }
 ];
 const heroStack = [
-    "React",
-    "Next.js",
-    "TypeScript",
-    "Node.js",
-    "MongoDB",
-    "Tailwind CSS"
+    'React',
+    'Next.js',
+    'TypeScript',
+    'Node.js',
+    'MongoDB',
+    'Tailwind CSS'
 ];
 const services = [
     {
@@ -413,8 +415,21 @@ const projects = [
         slug: 'score90x',
         name: 'Score90X',
         image: '/images/tools-image/scoreX90.webp',
+        gallery: [
+            '/images/tools-image/scoreX90.webp',
+            '/images/soccer90x/soccer-home-page.png',
+            '/images/soccer90x/2.png',
+            '/images/soccer90x/3.png',
+            '/images/soccer90x/4.png',
+            '/images/soccer90x/5.png',
+            '/images/soccer90x/6.png',
+            '/images/soccer90x/7.png'
+        ],
         description: 'Football platform providing live match scores, fixtures, standings and football-focused information.',
-        category: 'Applications',
+        categories: [
+            'UI/UX',
+            'Applications'
+        ],
         color: '#0ea5e9',
         year: '2026',
         technologies: [
@@ -424,14 +439,209 @@ const projects = [
             'Football API'
         ],
         featured: true,
-        link: 'https://world-cup-score90-x.vercel.app'
+        link: 'https://world-cup-score90-x.vercel.app',
+        caseStudy: {
+            role: 'UI/UX Designer & Frontend Developer',
+            duration: '4 weeks',
+            tools: [
+                'Figma',
+                'Next.js',
+                'TypeScript',
+                'Tailwind CSS'
+            ],
+            stack: [
+                {
+                    group: 'Frontend',
+                    items: [
+                        'Next.js',
+                        'TypeScript',
+                        'Tailwind CSS'
+                    ]
+                },
+                {
+                    group: 'Data & APIs',
+                    items: [
+                        'Football API',
+                        'REST'
+                    ]
+                },
+                {
+                    group: 'Design',
+                    items: [
+                        'Figma'
+                    ]
+                },
+                {
+                    group: 'Tools & Deployment',
+                    items: [
+                        'Git',
+                        'GitHub',
+                        'VS Code',
+                        'Vercel'
+                    ]
+                }
+            ],
+            sections: {
+                overview: [
+                    {
+                        title: 'Introduction & Objectives',
+                        text: 'What the product is and what it should achieve.'
+                    },
+                    {
+                        title: 'My Role',
+                        list: [
+                            'UX research',
+                            'UI design',
+                            'Frontend development'
+                        ]
+                    },
+                    {
+                        title: 'Scope',
+                        text: 'Web app, mobile-first, live scores and standings.'
+                    }
+                ],
+                research: [
+                    {
+                        title: 'Problem Statement',
+                        text: 'Fans have to check several apps for scores.'
+                    },
+                    {
+                        title: 'Competitor Analysis',
+                        list: [
+                            'What app A does well',
+                            'Where app B falls short'
+                        ]
+                    },
+                    {
+                        title: 'User Personas & Pain Points',
+                        list: [
+                            'Casual fan: wants quick scores',
+                            'Hardcore fan: wants stats'
+                        ]
+                    }
+                ],
+                ux: [
+                    {
+                        title: 'User Flow',
+                        images: [
+                            '/images/soccer90x/Score90X-User-Flow-Diagram.png'
+                        ]
+                    },
+                    {
+                        title: 'Low-fidelity Wireframes',
+                        images: [
+                            '/images/soccer90x/Score90X-Wireframes.png'
+                        ]
+                    }
+                ],
+                ui: [
+                    {
+                        title: 'Color Palette',
+                        colors: [
+                            {
+                                name: 'Accent',
+                                hex: '#22c55e'
+                            },
+                            {
+                                name: 'Background',
+                                hex: '#0b1220'
+                            }
+                        ]
+                    },
+                    {
+                        title: 'Typography',
+                        text: 'Fonts used and why.'
+                    },
+                    {
+                        title: 'High-fidelity Screens',
+                        images: [
+                            '/images/case/score90x-ui-1.webp',
+                            '/images/case/score90x-ui-2.webp'
+                        ]
+                    }
+                ],
+                prototype: [
+                    {
+                        title: 'Interactive Prototype',
+                        text: 'Flows and transitions covered in the Figma prototype.'
+                    },
+                    {
+                        title: 'Usability Testing',
+                        text: 'Who tested it and what they said.'
+                    },
+                    {
+                        title: 'Design Improvements',
+                        list: [
+                            'Changed X because of Y'
+                        ]
+                    }
+                ],
+                development: [
+                    {
+                        title: 'Technology Stack',
+                        list: [
+                            'Next.js',
+                            'TypeScript',
+                            'Football API'
+                        ]
+                    },
+                    {
+                        title: 'Architecture & Components',
+                        text: 'How the project is structured.'
+                    },
+                    {
+                        title: 'Performance & Accessibility',
+                        list: [
+                            'Image optimization',
+                            'Keyboard navigation'
+                        ]
+                    }
+                ],
+                deployment: [
+                    {
+                        title: 'Testing',
+                        list: [
+                            'Cross-device testing',
+                            'Browser compatibility'
+                        ]
+                    },
+                    {
+                        title: 'Deployment',
+                        text: 'Deployed on Vercel.'
+                    }
+                ],
+                conclusion: [
+                    {
+                        title: 'Challenges & Solutions',
+                        text: 'Hardest problem and how you solved it.'
+                    },
+                    {
+                        title: 'Key Learnings',
+                        list: [
+                            'Lesson 1',
+                            'Lesson 2'
+                        ]
+                    },
+                    {
+                        title: 'Future Improvements',
+                        list: [
+                            'Push notifications',
+                            'Dark/light themes'
+                        ]
+                    }
+                ]
+            }
+        }
     },
     {
         slug: 'velonto-food-delivery',
         name: 'Velonto Food Delivery',
         image: '/images/tools-image/velonto.webp',
         description: 'Food delivery platform featuring restaurant discovery, food browsing and ordering experiences.',
-        category: 'Web Development',
+        categories: [
+            'UI/UX',
+            'Web'
+        ],
         color: '#f97316',
         year: '2024',
         technologies: [
@@ -441,14 +651,179 @@ const projects = [
             'MongoDB'
         ],
         featured: true,
-        link: 'https://velonto.vercel.app'
+        link: 'https://velonto.vercel.app',
+        figma: 'https://www.figma.com/proto/...',
+        behance: 'https://www.behance.net/gallery/...',
+        caseStudy: {
+            role: 'UI/UX Designer & Frontend Developer',
+            duration: '4 weeks',
+            tools: [
+                'Figma',
+                'Next.js',
+                'TypeScript',
+                'Tailwind CSS'
+            ],
+            sections: {
+                overview: [
+                    {
+                        title: 'Introduction & Objectives',
+                        text: 'What the product is and what it should achieve.'
+                    },
+                    {
+                        title: 'My Role',
+                        list: [
+                            'UX research',
+                            'UI design',
+                            'Frontend development'
+                        ]
+                    },
+                    {
+                        title: 'Scope',
+                        text: 'Web app, mobile-first, live scores and standings.'
+                    }
+                ],
+                research: [
+                    {
+                        title: 'Problem Statement',
+                        text: 'Fans have to check several apps for scores.'
+                    },
+                    {
+                        title: 'Competitor Analysis',
+                        list: [
+                            'What app A does well',
+                            'Where app B falls short'
+                        ]
+                    },
+                    {
+                        title: 'User Personas & Pain Points',
+                        list: [
+                            'Casual fan: wants quick scores',
+                            'Hardcore fan: wants stats'
+                        ]
+                    }
+                ],
+                ux: [
+                    {
+                        title: 'User Flow',
+                        images: [
+                            '/images/case/score90x-flow.webp'
+                        ]
+                    },
+                    {
+                        title: 'Low-fidelity Wireframes',
+                        images: [
+                            '/images/case/score90x-wire.webp'
+                        ]
+                    }
+                ],
+                ui: [
+                    {
+                        title: 'Color Palette',
+                        colors: [
+                            {
+                                name: 'Accent',
+                                hex: '#22c55e'
+                            },
+                            {
+                                name: 'Background',
+                                hex: '#0b1220'
+                            }
+                        ]
+                    },
+                    {
+                        title: 'Typography',
+                        text: 'Fonts used and why.'
+                    },
+                    {
+                        title: 'High-fidelity Screens',
+                        images: [
+                            '/images/case/score90x-ui-1.webp',
+                            '/images/case/score90x-ui-2.webp'
+                        ]
+                    }
+                ],
+                prototype: [
+                    {
+                        title: 'Interactive Prototype',
+                        text: 'Flows and transitions covered in the Figma prototype.'
+                    },
+                    {
+                        title: 'Usability Testing',
+                        text: 'Who tested it and what they said.'
+                    },
+                    {
+                        title: 'Design Improvements',
+                        list: [
+                            'Changed X because of Y'
+                        ]
+                    }
+                ],
+                development: [
+                    {
+                        title: 'Technology Stack',
+                        list: [
+                            'Next.js',
+                            'TypeScript',
+                            'Football API'
+                        ]
+                    },
+                    {
+                        title: 'Architecture & Components',
+                        text: 'How the project is structured.'
+                    },
+                    {
+                        title: 'Performance & Accessibility',
+                        list: [
+                            'Image optimization',
+                            'Keyboard navigation'
+                        ]
+                    }
+                ],
+                deployment: [
+                    {
+                        title: 'Testing',
+                        list: [
+                            'Cross-device testing',
+                            'Browser compatibility'
+                        ]
+                    },
+                    {
+                        title: 'Deployment',
+                        text: 'Deployed on Vercel.'
+                    }
+                ],
+                conclusion: [
+                    {
+                        title: 'Challenges & Solutions',
+                        text: 'Hardest problem and how you solved it.'
+                    },
+                    {
+                        title: 'Key Learnings',
+                        list: [
+                            'Lesson 1',
+                            'Lesson 2'
+                        ]
+                    },
+                    {
+                        title: 'Future Improvements',
+                        list: [
+                            'Push notifications',
+                            'Dark/light themes'
+                        ]
+                    }
+                ]
+            }
+        }
     },
     {
         slug: 'adidas-gsap-website',
         name: 'Adidas GSAP Website',
         image: '/images/tools-image/adidas.webp',
         description: 'Animation-focused concept website featuring smooth interactions and modern motion design.',
-        category: 'Web Development',
+        categories: [
+            'UI/UX',
+            'Web'
+        ],
         color: '#111827',
         year: '2025',
         technologies: [
@@ -458,14 +833,177 @@ const projects = [
             'CSS'
         ],
         featured: true,
-        link: 'https://gsap-addidas-web.vercel.app'
+        link: 'https://gsap-addidas-web.vercel.app',
+        caseStudy: {
+            role: 'UI/UX Designer & Frontend Developer',
+            duration: '4 weeks',
+            tools: [
+                'Figma',
+                'Next.js',
+                'TypeScript',
+                'Tailwind CSS'
+            ],
+            sections: {
+                overview: [
+                    {
+                        title: 'Introduction & Objectives',
+                        text: 'What the product is and what it should achieve.'
+                    },
+                    {
+                        title: 'My Role',
+                        list: [
+                            'UX research',
+                            'UI design',
+                            'Frontend development'
+                        ]
+                    },
+                    {
+                        title: 'Scope',
+                        text: 'Web app, mobile-first, live scores and standings.'
+                    }
+                ],
+                research: [
+                    {
+                        title: 'Problem Statement',
+                        text: 'Fans have to check several apps for scores.'
+                    },
+                    {
+                        title: 'Competitor Analysis',
+                        list: [
+                            'What app A does well',
+                            'Where app B falls short'
+                        ]
+                    },
+                    {
+                        title: 'User Personas & Pain Points',
+                        list: [
+                            'Casual fan: wants quick scores',
+                            'Hardcore fan: wants stats'
+                        ]
+                    }
+                ],
+                ux: [
+                    {
+                        title: 'User Flow',
+                        images: [
+                            '/images/case/score90x-flow.webp'
+                        ]
+                    },
+                    {
+                        title: 'Low-fidelity Wireframes',
+                        images: [
+                            '/images/case/score90x-wire.webp'
+                        ]
+                    }
+                ],
+                ui: [
+                    {
+                        title: 'Color Palette',
+                        colors: [
+                            {
+                                name: 'Accent',
+                                hex: '#22c55e'
+                            },
+                            {
+                                name: 'Background',
+                                hex: '#0b1220'
+                            }
+                        ]
+                    },
+                    {
+                        title: 'Typography',
+                        text: 'Fonts used and why.'
+                    },
+                    {
+                        title: 'High-fidelity Screens',
+                        images: [
+                            '/images/case/score90x-ui-1.webp',
+                            '/images/case/score90x-ui-2.webp'
+                        ]
+                    }
+                ],
+                prototype: [
+                    {
+                        title: 'Interactive Prototype',
+                        text: 'Flows and transitions covered in the Figma prototype.'
+                    },
+                    {
+                        title: 'Usability Testing',
+                        text: 'Who tested it and what they said.'
+                    },
+                    {
+                        title: 'Design Improvements',
+                        list: [
+                            'Changed X because of Y'
+                        ]
+                    }
+                ],
+                development: [
+                    {
+                        title: 'Technology Stack',
+                        list: [
+                            'Next.js',
+                            'TypeScript',
+                            'Football API'
+                        ]
+                    },
+                    {
+                        title: 'Architecture & Components',
+                        text: 'How the project is structured.'
+                    },
+                    {
+                        title: 'Performance & Accessibility',
+                        list: [
+                            'Image optimization',
+                            'Keyboard navigation'
+                        ]
+                    }
+                ],
+                deployment: [
+                    {
+                        title: 'Testing',
+                        list: [
+                            'Cross-device testing',
+                            'Browser compatibility'
+                        ]
+                    },
+                    {
+                        title: 'Deployment',
+                        text: 'Deployed on Vercel.'
+                    }
+                ],
+                conclusion: [
+                    {
+                        title: 'Challenges & Solutions',
+                        text: 'Hardest problem and how you solved it.'
+                    },
+                    {
+                        title: 'Key Learnings',
+                        list: [
+                            'Lesson 1',
+                            'Lesson 2'
+                        ]
+                    },
+                    {
+                        title: 'Future Improvements',
+                        list: [
+                            'Push notifications',
+                            'Dark/light themes'
+                        ]
+                    }
+                ]
+            }
+        }
     },
     {
         slug: 'talk-tower',
         name: 'Talk Tower',
         image: '/images/tools-image/talk-tower.webp',
         description: 'Education-focused platform concept designed for interactive learning and engaging digital experiences.',
-        category: 'Web Design',
+        categories: [
+            'UI/UX',
+            'Web'
+        ],
         color: '#8b5cf6',
         year: '2025',
         technologies: [
@@ -480,7 +1018,10 @@ const projects = [
         name: 'Flyocean Travels',
         image: '/images/tools-image/flyocean.webp',
         description: 'Modern travel and tourism website designed to showcase destinations, services and travel experiences.',
-        category: 'Web Design',
+        categories: [
+            'UI/UX',
+            'Web'
+        ],
         color: '#06b6d4',
         year: '2025',
         technologies: [
@@ -495,7 +1036,10 @@ const projects = [
         name: 'Trendzio Shop',
         image: '/images/tools-image/trendzio.webp',
         description: 'E-commerce platform with product browsing, shopping cart functionality and a modern shopping experience.',
-        category: 'Web Development',
+        categories: [
+            'UI/UX',
+            'Web'
+        ],
         color: '#22c55e',
         year: '2025',
         technologies: [
@@ -511,7 +1055,10 @@ const projects = [
         name: 'Bismi Events',
         image: '/images/tools-image/bismi-events.webp',
         description: 'Event management website concept for discovering, planning and booking event services.',
-        category: 'Web Design',
+        categories: [
+            'UI/UX',
+            'Web'
+        ],
         color: '#ef4444',
         year: '2024',
         technologies: [
@@ -552,6 +1099,7 @@ const nav = [
         href: '#contact'
     }
 ];
+const hasCaseStudy = (p)=>p.categories.includes('UI/UX');
 }),
 "[project]/src/lib/seo-config.ts [app-route] (ecmascript)", ((__turbopack_context__) => {
 "use strict";

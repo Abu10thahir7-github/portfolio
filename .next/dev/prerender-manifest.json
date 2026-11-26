@@ -1,11 +1,1 @@
-{
-  "version": 4,
-  "routes": {},
-  "dynamicRoutes": {},
-  "notFoundRoutes": [],
-  "preview": {
-    "previewModeId": "b190ac27279012c0419e1f197f63bba4",
-    "previewModeSigningKey": "0f90a6825ffab6d8db533ed337ff2b505167b98c741ec858b2790a9c2df4ee17",
-    "previewModeEncryptionKey": "70bc337192bb287e0b5d45dbe6a0e8b069edab0372ef7bb05037ba0d98729268"
-  }
-}
+{"version":4,"routes":{"/work/score90x":{},"/work/velonto-food-delivery":{},"/work/adidas-gsap-website":{},"/work/talk-tower":{},"/work/flyocean-travels":{},"/work/trendzio-shop":{},"/work/bismi-events":{}},"dynamicRoutes":{"/work/[slug]":{"dataRoute":null,"dataRouteRegex":null,"fallback":null,"fallbackRevalidate":false,"fallbackSourceRoute":"/work/[slug]","routeRegex":"^\\/work\\/([^/]+?)(?:\\/)?$","allowHeader":[]}},"notFoundRoutes":[],"preview":{"previewModeId":"429570f1601cff00dc9ed60d760a9fa0","previewModeSigningKey":"2450bfc9186658d9263fc344f9a4bbc508ce22c16db5b001d4759e8d1a7a8b0c","previewModeEncryptionKey":"7b5c02e6f64398c1f7b1bda55c29c2d5eb59d40c66a2c7da8404d6ce6c0689c2"}}
