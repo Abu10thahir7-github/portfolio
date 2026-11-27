@@ -45,13 +45,13 @@ export default function Sidebar() {
         }`}
       >
         <div>
-          <div className="flex items-center gap-3">
+          <a href='/' className="flex items-center gap-3">
             <Avatar heroPortrait={heroPortrait} />
             <div>
               <p className="font-display text-lg font-semibold leading-tight">{site.name}</p>
               <p className="text-sm text-accent">{site.role}</p>
             </div>
-          </div>
+          </a>
 
           <nav className="mt-5 flex flex-col gap-1" aria-label="Primary">
             {nav.map(item => (
@@ -74,7 +74,7 @@ export default function Sidebar() {
           <a
             href="/Abu_Thahir_React_Developer_Resume.pdf"
             download
-            className="mt-5 flex w-full items-center justify-center gap-2 rounded-lg bg-accent px-4 py-3 text-sm font-semibold text-black transition-opacity hover:opacity-90"
+            className="mt-5 block md:hidden  flex w-full items-center justify-center gap-2 rounded-lg bg-accent px-4 py-3 text-sm font-semibold text-black transition-opacity hover:opacity-90"
           >
             <Download size={16} /> Download Resume
           </a>

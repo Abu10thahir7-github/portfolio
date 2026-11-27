@@ -3,14 +3,11 @@ import { GraduationCap, Briefcase } from 'lucide-react';
 
 function SkillCapsule({ name }: { name: string }) {
   return (
-    <li
-      className="relative isolate overflow-hidden rounded-full border border-border   px-4 py-2"
-
-    >
+    <li className="relative isolate overflow-hidden rounded-full border border-border   px-3 py-1.5">
       <span className="absolute inset-y-0 left-0 -z-10 rounded-full   bg-accent-dim opacity-25 w-full" />
 
       <span className="flex items-center justify-between gap-3 text-sm">
-        <span className="font-light ">{name}</span>
+        <span className="font-light  ">{name}</span>
       </span>
     </li>
   );
@@ -19,7 +16,7 @@ function SkillCapsule({ name }: { name: string }) {
 function SkillGroup({ title, items }: { title: string; items: { name: string }[] }) {
   return (
     <div>
-      <h4 className="mb-2 text-sm font-semibold uppercase tracking-wide text-muted">{title}</h4>
+      <h4 className="mb-1 text-sm font-semibold uppercase tracking-wide text-muted">{title}</h4>
       <ul className="flex flex-wrap gap-1">
         {items.map(s => (
           <SkillCapsule key={s.name} name={s.name} />
@@ -34,7 +31,7 @@ export default function Resume() {
     <section
       id="resume"
       aria-labelledby="resume-heading"
-      className="border-b border-border px-6 py-15 sm:px-10 lg:px-16"
+      className="border-b grid-bg border-border px-6 py-15 sm:px-10 lg:px-16"
     >
       <header className="mb-12">
         <p className="font-mono-tech text-sm text-accent">02 · Background</p>
@@ -79,13 +76,20 @@ export default function Resume() {
           </div>
         </div>
 
-        <div className="space-y-7 rounded-2xl h-fit border border-border bg-surface p-6">
+        <div className="space-y-6 rounded-2xl h-fit border border-border bg-surface p-6">
           <h3 className="font-display text-xl font-semibold">My Skills</h3>
+
+          <SkillGroup title="UI/UX Design" items={skills.uiux} />
+
           <SkillGroup title="Frontend Development" items={skills.frontend} />
+
+          <SkillGroup title="Design & Development Tools" items={skills.tools} />
+
           <SkillGroup title="Backend Development" items={skills.backend} />
+
           <SkillGroup title="Databases" items={skills.databases} />
-          <SkillGroup title="Tools & Technologies" items={skills.tools} />
-          <SkillGroup title="engineering" items={skills.engineering} />
+
+          <SkillGroup title="Design & Engineering" items={skills.engineering} />
         </div>
       </div>
     </section>

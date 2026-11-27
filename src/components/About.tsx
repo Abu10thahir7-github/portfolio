@@ -1,14 +1,20 @@
 import { about, services } from '@/lib/data';
-import { Palette, Code2, LayoutGrid, Server, PenTool, Smartphone, Gauge } from 'lucide-react';
+import {
+  Code2,
+  PenTool,
+  Users,
+  Layers,
+  Smartphone,
+  PanelsTopLeft,
+} from 'lucide-react';
 
 const iconMap = {
-  Palette,
-  Code2,
-  LayoutGrid,
-  Server,
   PenTool,
+  Users,
+  Layers,
+  Code2,
   Smartphone,
-  Gauge,
+  PanelsTopLeft,
 };
 export default function About() {
   return (
@@ -35,7 +41,7 @@ export default function About() {
           <h3 className="mb-5 font-display text-lg font-semibold">What I&apos;m Doing</h3>
           <div className="grid gap-4 sm:grid-cols-2">
             {services.map(service => {
-              const Icon = iconMap[service.icon as keyof typeof iconMap];
+           const Icon = iconMap[service.icon as keyof typeof iconMap] ?? Code2;
               return (
                 <div
                   key={service.title}

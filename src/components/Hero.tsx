@@ -49,7 +49,7 @@ export default function Hero() {
               href="#contact"
               className="inline-flex items-center gap-2 rounded-lg border border-border px-6 py-3 text-sm font-semibold text-foreground transition-colors hover:border-accent hover:text-accent"
             >
-              Contact Me <ArrowRight size={16} />
+              Let's Talk <ArrowRight size={16} />
             </a>
           </div>
 

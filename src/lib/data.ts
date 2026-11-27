@@ -1,8 +1,8 @@
 export const site = {
   name: 'Abu Thahir',
-  role: 'Full Stack Developer — React & Next.js',
+  role: 'UI/UX Designer & Frontend Developer',
   tagline:
-    'Abu Thahir is a frontend-focused Full Stack Developer specializing in React, Next.js, TypeScript, Node.js and modern responsive web applications.',
+    'I design meaningful digital experiences and develop modern, responsive websites that combine beautiful interfaces with seamless functionality.',
   email: 'abu10thahir7@gmail.com',
   phone: '+91 8921966269',
   location: 'Kerala, India',
@@ -23,53 +23,53 @@ export const stats = [
   { label: 'Experience', value: '2+ Years' },
   { label: 'Projects', value: '15+' },
   { label: 'Tech Stack', value: '10+' },
-  { label: 'Specialty', value: 'Frontend' },
+  { label: 'Focus', value: 'UI/UX & Dev ' },
 ];
 
-export const heroStack = ['React', 'Next.js', 'TypeScript', 'Node.js', 'MongoDB', 'Tailwind CSS'];
+export const heroStack = ['UI/UX Design', 'Figma', 'UX Research', 'Wireframing', 'Prototyping','React','Next.js', 'Tailwind CSS'];
+
+
 export const services = [
   {
-    title: 'Web Development',
-    description: 'Modern, fast and scalable websites built with clean and maintainable code.',
-    icon: 'Code2',
-  },
-  {
-    title: 'Frontend Development',
-    description:
-      'Interactive and responsive interfaces built with React, Next.js and modern frontend tools.',
-    icon: 'LayoutGrid',
-  },
-  {
-    title: 'Backend Development',
-    description:
-      'Reliable REST APIs, server-side logic and database solutions using Node.js and MongoDB.',
-    icon: 'Server',
-  },
-  {
     title: 'UI/UX Design',
-    description:
-      'Clean and intuitive interfaces designed around usability, accessibility and user experience.',
+    description: 'Designing intuitive and user-friendly digital experiences.',
     icon: 'PenTool',
   },
   {
-    title: 'Responsive Design',
-    description:
-      'Mobile-first experiences that look and work smoothly across phones, tablets and desktops.',
+    title: 'UX Research',
+    description: 'Understanding users and identifying their needs.',
+    icon: 'Users',
+  },
+  {
+    title: 'Wireframing & Prototyping',
+    description: 'Creating wireframes and interactive prototypes.',
+    icon: 'Layers',
+  },
+  {
+    title: 'Frontend Development',
+    description: 'Building modern interfaces with React and Next.js.',
+    icon: 'Code2',
+  },
+  {
+    title: 'Responsive Web Design',
+    description: 'Creating seamless experiences across all devices.',
     icon: 'Smartphone',
   },
   {
-    title: 'Web Performance',
-    description:
-      'Optimized web experiences focused on speed, accessibility, SEO and real-world performance.',
-    icon: 'Gauge',
+    title: 'Design to Code',
+    description: 'Turning Figma designs into pixel-perfect websites.',
+    icon: 'PanelsTopLeft',
   },
 ];
 
+
 export const about = {
   paragraphs: [
-    "I'm Abu Thahir, a Full Stack Developer focused on building modern web applications and user-friendly digital experiences. I work primarily with React, Next.js, TypeScript, Node.js, MongoDB and Tailwind CSS.",
-    'I started my development journey through self-learning and strengthened my practical skills through professional internship experience, freelance work and building real-world projects. I enjoy turning ideas and designs into responsive, functional and polished web experiences.',
-    "I'm continuously improving my skills by exploring modern technologies, official documentation and hands-on projects. My goal is to build useful products, solve real problems and grow as a professional developer while working with talented teams and clients.",
+    "I'm Abu Thahir, a UI/UX Designer & Frontend Developer passionate about creating intuitive digital experiences and modern web interfaces. I combine user-centered design principles with frontend technologies to build websites that are visually engaging, accessible, and easy to use.",
+
+    "My journey started with frontend development, where I discovered my interest in UI/UX design and the importance of understanding user needs. Through self-learning, practical projects, and hands-on experience, I've developed skills in interface design, wireframing, prototyping, and responsive web development ",
+
+    "I enjoy exploring design ideas, solving user experience challenges, and transforming concepts into polished digital products. I'm continuously improving my design and development skills to create meaningful experiences that bring value to users and businesses.",
   ],
 };
 
@@ -115,7 +115,23 @@ export const experience = [
   },
 ];
 
+
 export const skills = {
+  uiux: [
+    { name: 'Figma' },
+    { name: 'UI Design' },
+    { name: 'UX Research' },
+    { name: 'Wireframing' },
+    { name: 'Prototyping' },
+    { name: 'Auto Layout' },
+    { name: 'Design Systems' },
+    { name: 'User Testing' },
+    { name: 'Visual Design' },
+    { name: 'Usability' },
+    { name: 'Accessibility' },
+    { name: 'User-Centered Design' },
+  ],
+
   frontend: [
     { name: 'HTML5' },
     { name: 'CSS3' },
@@ -134,37 +150,42 @@ export const skills = {
   backend: [
     { name: 'Node.js' },
     { name: 'NestJS' },
-    { name: 'TypeScript' },
+    { name: 'Express.js' },
     { name: 'Prisma ORM' },
-    { name: 'SQL' },
     { name: 'REST APIs' },
-    { name: 'API Development' },
+    { name: 'API Integration' },
     { name: 'Server-side Development' },
   ],
 
-  databases: [{ name: 'SQL' }, { name: 'PostgreSQL' }, { name: 'MongoDB' }],
+  databases: [
+    { name: 'PostgreSQL' },
+    { name: 'MongoDB' },
+    { name: 'SQL' },
+  ],
 
   tools: [
+    { name: 'Figma' },
     { name: 'Git' },
     { name: 'GitHub' },
     { name: 'VS Code' },
     { name: 'Cursor' },
-    { name: 'Figma' },
     { name: 'Postman' },
     { name: 'Vercel' },
     { name: 'Jira' },
     { name: 'Canva' },
   ],
+
   engineering: [
+    { name: 'Component Design' },
+    { name: 'Reusable Components' },
     { name: 'State Management' },
     { name: 'API Integration' },
-    { name: 'Caching Strategies' },
-    { name: 'Scalable Application Development' },
-    { name: 'Software Architecture' },
     { name: 'Clean Architecture' },
+    { name: 'Performance Optimization' },
     { name: 'React Query' },
   ],
 };
+
 export type Category = 'UI/UX' | 'Web' | 'Applications';
 export type CaseBlock = {
   title: string;
