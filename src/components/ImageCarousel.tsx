@@ -66,7 +66,7 @@ export default function ImageCarousel({
             onClick={() => goTo(index - 1)}
             disabled={index === 0}
             aria-label="Previous image"
-            className="absolute left-3 top-1/2 hidden -translate-y-1/2 rounded-full bg-black/50 p-2 text-white backdrop-blur-sm transition hover:bg-black/70 disabled:opacity-30 sm:block"
+            className="absolute left-3 top-1/2 hidden -translate-y-1/2 rounded-full bg-black/50 p-2 text-accent backdrop-blur-sm transition hover:bg-black/70 disabled:opacity-30 sm:block"
           >
             <ChevronLeft size={20} aria-hidden />
           </button>
@@ -75,7 +75,7 @@ export default function ImageCarousel({
             onClick={() => goTo(index + 1)}
             disabled={index === images.length - 1}
             aria-label="Next image"
-            className="absolute right-3 top-1/2 hidden -translate-y-1/2 rounded-full bg-black/50 p-2 text-white backdrop-blur-sm transition hover:bg-black/70 disabled:opacity-30 sm:block"
+            className="absolute right-3 top-1/2 hidden -translate-y-1/2 rounded-full bg-black/50 p-2 text-accent backdrop-blur-sm transition hover:bg-black/70 disabled:opacity-30 sm:block"
           >
             <ChevronRight size={20} aria-hidden />
           </button>

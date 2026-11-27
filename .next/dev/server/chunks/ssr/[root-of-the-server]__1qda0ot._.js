@@ -414,9 +414,10 @@ async function CaseStudyPage({ params }) {
                     children: [
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$react$2d$server$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
                             href: "/#portfolio",
-                            className: "inline-flex items-center gap-2 text-sm text-muted hover:text-foreground",
+                            className: "inline-flex items-center gap-2 text-sm text-muted hover:text-foreground sticky top-4 rounded-xl border border-border  bg-surface px-4 py-2 transition-colors z-10",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$lucide$2d$react$40$1$2e$31$2e$0_react$40$19$2e$2$2e$8$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$arrow$2d$left$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__$3c$export__default__as__ArrowLeft$3e$__["ArrowLeft"], {
+                                    className: "text-accent",
                                     size: 16,
                                     "aria-hidden": true
                                 }, void 0, false, {
@@ -529,9 +530,16 @@ async function CaseStudyPage({ params }) {
                             className: "mt-10 flex gap-2 overflow-auto rounded-full border border-border bg-surface p-1.5",
                             children: visible.map((s)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
                                     href: `#${s.key}`,
-                                    className: "text-nowrap rounded-full px-4 py-2 text-sm font-medium text-muted transition-colors hover:text-foreground",
+                                    className: "text-nowrap rounded-full px-4 py-2 text-sm font-medium text-muted transition-colors hover:text-foreground ",
                                     children: [
-                                        s.num,
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$3$2e$0_$40$babel$2b$core$40$7$2e$2_af97c129856baaa88abbba90082084d1$2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-accent-dim ",
+                                            children: s.num
+                                        }, void 0, false, {
+                                            fileName: "[project]/src/app/work/[slug]/page.tsx",
+                                            lineNumber: 236,
+                                            columnNumber: 18
+                                        }, this),
                                         " · ",
                                         s.label
                                     ]

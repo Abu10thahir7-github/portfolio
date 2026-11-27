@@ -183,9 +183,9 @@ export default async function CaseStudyPage({ params }: Props) {
         <main className="px-6 py-15   ">
           <Link
             href="/#portfolio"
-            className="inline-flex items-center gap-2 text-sm text-muted hover:text-foreground"
+            className="inline-flex items-center gap-2 text-sm text-muted hover:text-foreground sticky top-4 rounded-xl border border-border  bg-surface px-4 py-2 transition-colors z-10"
           >
-            <ArrowLeft size={16} aria-hidden /> Back to portfolio
+            <ArrowLeft className='text-accent' size={16} aria-hidden /> Back to portfolio
           </Link>
 
           <h1 className="mt-6 font-display text-4xl font-bold sm:text-5xl">{project.name}</h1>
@@ -231,9 +231,9 @@ export default async function CaseStudyPage({ params }: Props) {
                 <a
                   key={s.key}
                   href={`#${s.key}`}
-                  className="text-nowrap rounded-full px-4 py-2 text-sm font-medium text-muted transition-colors hover:text-foreground"
+                  className="text-nowrap rounded-full px-4 py-2 text-sm font-medium text-muted transition-colors hover:text-foreground "
                 >
-                  {s.num} · {s.label}
+                 <span className="text-accent-dim ">{s.num}</span> · {s.label}
                 </a>
               ))}
             </nav>
