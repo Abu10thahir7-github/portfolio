@@ -162,6 +162,11 @@ export default async function CaseStudyPage({ params }: Props) {
       icon: <BehanceIcon className="h-7 w-7 text-foreground" />,
       title: 'Behance',
       sub: 'Full presentation',
+    },  {
+      href: project.repo,
+      icon: <GithubIcon size={26} aria-hidden />, // import { Github } from "lucide-react"
+      title: 'Source Code',
+      sub: 'View on GitHub',
     },
     {
       href: project.link,
@@ -169,12 +174,7 @@ export default async function CaseStudyPage({ params }: Props) {
       title: 'Live Website',
       sub: 'Try it yourself',
     },
-    {
-      href: project.repo,
-      icon: <GithubIcon size={26} aria-hidden />, // import { Github } from "lucide-react"
-      title: 'Source Code',
-      sub: 'View on GitHub',
-    },
+
   ].filter(l => l.href);
   const meta = [
     { label: 'Role', value: cs?.role },
@@ -212,7 +212,7 @@ export default async function CaseStudyPage({ params }: Props) {
             alt={project.name}
           />
 
-          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {links.map(({ href, icon, title, sub }) => (
               <a
                 key={title}
