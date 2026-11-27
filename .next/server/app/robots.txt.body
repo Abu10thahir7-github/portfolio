@@ -1,7 +1,0 @@
-User-Agent: *
-Allow: /
-Disallow: /api/
-Disallow: /_next/
-
-Host: https://abuthahir.dev
-Sitemap: https://abuthahir.dev/sitemap.xml
