@@ -43,11 +43,18 @@ export default function FreeToolsSection() {
   const liveCount = useLiveCounter();
 
   return (
-    <section id='freetools' aria-labelledby="freetools-heading" className="relative bg-[#0a0a0a] px-2 py-15 sm:px-10 lg:px-16">
+    <section
+      id="freetools"
+      aria-labelledby="freetools-heading"
+      className="relative bg-[#0a0a0a] px-2 py-15 sm:px-10 lg:px-16"
+    >
       <div className=" ">
         <p className="mb-3 font-mono text-sm tracking-wide text-accent">04 · Side Project</p>
-        <h2 aria-labelledby="freetools-heading" className="text-4xl font-bold text-white sm:text-5xl">
-         Our Free <span className="text-accent">Tools</span>
+        <h2
+          aria-labelledby="freetools-heading"
+          className="text-4xl font-bold text-white sm:text-3xl"
+        >
+          Our Free <span className="text-accent">Tools</span>
         </h2>
         <p className="mt-4 max-w-lg text-neutral-400">
           A web app I'm building with 37+ browser-based utilities — image, PDF, audio and developer
@@ -67,9 +74,9 @@ export default function FreeToolsSection() {
               }}
             />
             <span className="absolute right-3 top-3 z-50 inline-flex items-center gap-1 rounded-full bg-black/20 px-2.5 py-1 text-[11px] font-medium text-accent backdrop-blur-xs">
-                  <Star size={12} className="fill-accent" aria-hidden />
-                  Featured
-                </span>
+              <Star size={12} className="fill-accent" aria-hidden />
+              Featured
+            </span>
 
             {/* browser chrome */}
             <div className="relative overflow-hidden rounded-lg border border-white/10 bg-[#0d0d0d] shadow-2xl shadow-black/50">
@@ -102,13 +109,12 @@ export default function FreeToolsSection() {
                         className="rounded-md border border-white/10 bg-white/[0.02] p-2.5 hover:bg-gray-200/10"
                       >
                         <div className="flex justify-between">
-                          <div className='flex gap-1.5'>
-
-                          <Icon size={14} className="mb-2 text-accent" />{' '}
-                          <p className="text-xs text-neutral-300">{tool.name}</p>
+                          <div className="flex gap-1.5">
+                            <Icon size={14} className="mb-2 text-accent" />{' '}
+                            <p className="text-xs text-neutral-300">{tool.name}</p>
                           </div>
-                            <ArrowUpRight size={15} className="text-accent" />
-                          </div>
+                          <ArrowUpRight size={15} className="text-accent" />
+                        </div>
 
                         <div className="h-1.5 w-3/4 rounded-full bg-white/15" />
                         <div className="mt-1.5 h-1.5 w-1/2 rounded-full bg-white/[0.06]" />
@@ -157,7 +163,6 @@ export default function FreeToolsSection() {
             </div>
 
             <div className="mt-6 flex flex-wrap items-center justify-center  gap-3 border-t border-white/10 pt-5">
-
               <div className="flex items-center gap-1.5 text-[11px] text-neutral-500">
                 <Lock size={12} className="text-accent" />
                 Private — processed on your device

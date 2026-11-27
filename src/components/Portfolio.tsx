@@ -6,15 +6,16 @@ import { hasCaseStudy, Project, projects } from '@/lib/data';
 import Image from 'next/image';
 import Link from 'next/link';
 
-const filters = ['All', 'UI/UX', 'Web', 'Applications'] as const;
+const filters = ['All', 'UI/UX', 'Web', 'Freelance', 'Learning'] as const;
 
 export default function Portfolio() {
   const [active, setActive] = useState<(typeof filters)[number]>('All');
 
   const visible = useMemo(() => {
     const filtered =
-      active === 'All' ? projects : projects.filter(p => p.categories.includes(active));
-
+      active === 'All'
+        ? projects.filter(p => !p.categories.includes('Learning'))
+        : projects.filter(p => p.categories.includes(active));
     // Featured projects surface first within the current filter
     return [...filtered].sort((a, b) => Number(b.featured ?? false) - Number(a.featured ?? false));
   }, [active]);
@@ -28,7 +29,7 @@ export default function Portfolio() {
       <header className="mb-10 flex flex-wrap items-end justify-between gap-6">
         <div>
           <p className="font-mono-tech text-sm text-accent">03 · Selected Work</p>
-          <h2 id="portfolio-heading" className="mt-2 font-display text-4xl font-bold sm:text-5xl">
+          <h2 id="portfolio-heading" className="mt-2 font-display text-4xl font-bold sm:text-3xl">
             My <span className="text-accent">Work</span>
           </h2>
         </div>
@@ -54,77 +55,92 @@ export default function Portfolio() {
         </div>
       </header>
 
-      <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        {visible.map(project => {
-          const caseStudy = hasCaseStudy(project);
-          const hasLive = !!project.link;
+     <div className="grid items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-3">
+  {visible.map(project => {
+    const caseStudy = hasCaseStudy(project);
+    const hasLive = !!project.link;
 
-          return (
-            <article
-              key={project.slug}
-              className="group overflow-hidden rounded-2xl border border-border bg-surface transition-colors hover:border-accent-dim"
-            >
+    return (
+      <article
+        key={project.slug}
+        className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-surface transition-colors hover:border-accent-dim"
+      >
+        {/* Fixed image frame: same size for every card */}
+        <Link
+          href={caseStudy ? `/work/${project.slug}` : project.link || project.repo || '#'}
+          target={!caseStudy && (hasLive || project.repo) ? '_blank' : '_self'}
+          rel={!caseStudy && (hasLive || project.repo) ? 'noopener noreferrer' : undefined}
+          aria-label={`${caseStudy ? 'View case study for' : 'Visit'} ${project.name}`}
+          className="relative block aspect-[16/10] w-full shrink-0 overflow-hidden bg-surface-2"
+        >
+          <Image
+            src={project.image}
+            alt={project.name}
+            fill
+            sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+            className="object-cover transition-transform duration-300 group-hover:scale-[1.03]"
+          />
+          {project.featured && (
+            <span className="absolute left-3 top-3 inline-flex items-center gap-1 rounded-full bg-black/40 px-2.5 py-1 text-[11px] font-medium text-accent backdrop-blur-sm">
+              <Star size={12} className="fill-accent" aria-hidden />
+              Featured
+            </span>
+          )}
+        </Link>
+
+        {/* Body stretches so every card ends at the same height */}
+        <div className="flex flex-1 flex-col p-5">
+          <div className="flex items-start justify-between gap-3">
+            <h3 className="line-clamp-1 font-semibold">{project.name}</h3>
+            <span className="shrink-0 font-mono-tech text-xs text-muted">{project.year}</span>
+          </div>
+
+          <p className="mt-1 line-clamp-2 min-h-[2.5rem] text-sm text-muted">
+            {project.description}
+          </p>
+
+          {/* mt-auto pushes the links to the bottom of every card */}
+          <div className="mt-auto flex flex-wrap items-center justify-between gap-x-4 gap-y-2 border-t border-border pt-4 text-sm font-medium">
+            {caseStudy ? (
               <Link
-                href={caseStudy ? `/work/${project.slug}` : project.link || '#'}
-                target={!caseStudy && hasLive ? '_blank' : '_self'}
-                rel={!caseStudy && hasLive ? 'noopener noreferrer' : undefined}
-                aria-label={`${caseStudy ? 'View case study for' : 'Visit'} ${project.name}`}
-                className="relative flex h-[250px] items-center justify-center text-center font-display text-2xl font-bold text-white/90"
+                href={`/work/${project.slug}`}
+                className="inline-flex items-center gap-1 text-accent hover:underline"
               >
-                <Image
-                  src={project.image}
-                  alt={project.name}
-                  width={1000}
-                  height={900}
-                  className="object-cover"
-                />
-                {project.featured && (
-                  <span className="absolute left-3 top-3 inline-flex items-center gap-1 rounded-full bg-black/40 px-2.5 py-1 text-[11px] font-medium text-accent backdrop-blur-sm">
-                    <Star size={12} className="fill-accent" aria-hidden />
-                    Featured
-                  </span>
-                )}
+                Case Study <ArrowUpRight size={14} aria-hidden />
               </Link>
+            ) : (
+              <span />
+            )}
 
-              <div className="p-5">
-                <div className="flex items-start justify-between gap-3">
-                  <h3 className="font-semibold">{project.name}</h3>
-                  <span className="shrink-0 font-mono-tech text-xs text-muted">{project.year}</span>
-                </div>
-                <p className="mt-1 line-clamp-2 text-sm text-muted">{project.description}</p>
+            <div className="flex items-center gap-4">
+              {hasLive && (
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-muted hover:text-foreground"
+                >
+                  Live Site <ArrowUpRight size={14} aria-hidden />
+                </a>
+              )}
 
-
-
-              
-
-                <div className="mt-4 flex items-center justify-between border-t border-border pt-4 text-sm font-medium">
-                  {caseStudy ? (
-                    <Link
-                      href={`/work/${project.slug}`}
-                      className="inline-flex items-center gap-1 text-accent hover:underline"
-                    >
-                      View Case Study <ArrowUpRight size={14} aria-hidden />
-                    </Link>
-                  ) : (
-                    <span />
-                  )}
-
-                  {hasLive && (
-                    <a
-                      href={project.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1 text-muted hover:text-foreground"
-                    >
-                      Live Site <ArrowUpRight size={14} aria-hidden />
-                    </a>
-                  )}
-                </div>
-              </div>
-            </article>
-          );
-        })}
-      </div>
+              {project.repo && (
+                <a
+                  href={project.repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-muted hover:text-foreground"
+                >
+                  Source Code <ArrowUpRight size={14} aria-hidden />
+                </a>
+              )}
+            </div>
+          </div>
+        </div>
+      </article>
+    );
+  })}
+</div>
     </section>
   );
 }

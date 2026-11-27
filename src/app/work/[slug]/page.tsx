@@ -7,6 +7,7 @@ import { ArrowLeft, ArrowRight, PenTool, Layers, ExternalLink } from 'lucide-rea
 import { hasCaseStudy, projects, type CaseBlock, type CaseSectionKey } from '@/lib/data';
 import Sidebar from '@/components/Sidebar';
 import { FigmaIcon, BehanceIcon } from '@/components/BrandIcons';
+import { GithubIcon } from '@/components/SocialIcons';
 type Props = { params: Promise<{ slug: string }> };
 
 const SECTIONS: { key: CaseSectionKey; num: string; label: string; title: string }[] = [
@@ -168,6 +169,12 @@ export default async function CaseStudyPage({ params }: Props) {
       title: 'Live Website',
       sub: 'Try it yourself',
     },
+    {
+      href: project.repo,
+      icon: <GithubIcon size={26} aria-hidden />, // import { Github } from "lucide-react"
+      title: 'Source Code',
+      sub: 'View on GitHub',
+    },
   ].filter(l => l.href);
   const meta = [
     { label: 'Role', value: cs?.role },
@@ -185,10 +192,10 @@ export default async function CaseStudyPage({ params }: Props) {
             href="/#portfolio"
             className="inline-flex items-center gap-2 text-sm text-muted hover:text-foreground sticky top-4 rounded-xl border border-border  bg-surface px-4 py-2 transition-colors z-10"
           >
-            <ArrowLeft className='text-accent' size={16} aria-hidden /> Back to portfolio
+            <ArrowLeft className="text-accent" size={16} aria-hidden /> Back to portfolio
           </Link>
 
-          <h1 className="mt-6 font-display text-4xl font-bold sm:text-5xl">{project.name}</h1>
+          <h1 className="mt-6 font-display text-4xl font-bold sm:text-3xl">{project.name}</h1>
           <p className="mt-3 max-w-2xl text-muted">{project.description}</p>
 
           <dl className="mt-8 grid grid-cols-2 gap-4 rounded-2xl border border-border bg-surface p-5 sm:grid-cols-4">
@@ -233,7 +240,7 @@ export default async function CaseStudyPage({ params }: Props) {
                   href={`#${s.key}`}
                   className="text-nowrap rounded-full px-4 py-2 text-sm font-medium text-muted transition-colors hover:text-foreground "
                 >
-                 <span className="text-accent-dim ">{s.num}</span> · {s.label}
+                  <span className="text-accent-dim ">{s.num}</span> · {s.label}
                 </a>
               ))}
             </nav>

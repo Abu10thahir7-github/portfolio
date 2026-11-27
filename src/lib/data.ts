@@ -186,7 +186,7 @@ export const skills = {
   ],
 };
 
-export type Category = 'UI/UX' | 'Web' | 'Applications';
+export type Category = 'UI/UX' | 'Web'  | 'Freelance'| 'Learning';
 export type CaseBlock = {
   title: string;
   text?: string;
@@ -228,6 +228,7 @@ export type Project = {
   behance?: string;
   caseStudy?: CaseStudy; // Behance presentation
   gallery?: string[];
+   repo?: string;   // GitHub link, useful for learning projects
 };
 export const projects: Project[] = [
   {
@@ -246,7 +247,7 @@ export const projects: Project[] = [
 ],
     description:
       'Football platform providing live match scores, fixtures, standings and football-focused information.',
-    categories: ['UI/UX', 'Applications'],
+    categories: ['UI/UX', 'Web'],
     color: '#0ea5e9',
     year: '2026',
     technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Football API'],
@@ -501,7 +502,7 @@ export const projects: Project[] = [
     image: '/images/tools-image/talk-tower.webp',
     description:
       'Education-focused platform concept designed for interactive learning and engaging digital experiences.',
-    categories: ['UI/UX', 'Web'],
+    categories: ['Freelance'],
     color: '#8b5cf6',
     year: '2025',
     technologies: ['React', 'Tailwind CSS', 'Figma'],
@@ -513,7 +514,7 @@ export const projects: Project[] = [
     image: '/images/tools-image/flyocean.webp',
     description:
       'Modern travel and tourism website designed to showcase destinations, services and travel experiences.',
-    categories: ['UI/UX', 'Web'],
+    categories: [ 'Freelance'],
     color: '#06b6d4',
     year: '2025',
     technologies: ['Next.js', 'Tailwind CSS', 'TypeScript'],
@@ -525,7 +526,7 @@ export const projects: Project[] = [
     image: '/images/tools-image/trendzio.webp',
     description:
       'E-commerce platform with product browsing, shopping cart functionality and a modern shopping experience.',
-    categories: ['UI/UX', 'Web'],
+    categories: ['Freelance'],
     color: '#22c55e',
     year: '2025',
     technologies: ['React', 'Node.js', 'Express.js', 'MongoDB'],
@@ -543,6 +544,122 @@ export const projects: Project[] = [
     technologies: ['React', 'Tailwind CSS', 'Figma'],
     link: '',
   },
+ {
+  slug: 'weather-app',
+  name: 'Weather App',
+  image: '/images/tools-image/React-weather-App.png',
+  description: 'Practice project built while learning React hooks and REST APIs.',
+  categories: ['Web', 'Learning'],
+  color: '#0ea5e9',
+  year: '2023',
+  technologies: ['React', 'REST API', 'CSS'],
+  link: 'https://abus-weatherapp.vercel.app/',
+  repo: 'https://github.com/Abu10thahir7-github/...',
+  caseStudy: {
+    role: 'Developer (learning project)',
+    tools: ['React', 'VS Code', 'Git'],
+    sections: {
+      overview: [
+        { title: 'Goal', text: 'What you wanted to learn by building this.' },
+        { title: 'Scope', text: 'Search by city, current weather, 5-day forecast.' },
+      ],
+      development: [
+        { title: 'How It Works', text: 'How you fetch data and show it.' },
+        { title: 'What I Practiced', list: ['useState and useEffect', 'Fetching from an API', 'Error and loading states'] },
+      ],
+      conclusion: [
+        { title: 'Challenges & Solutions', text: 'A real problem you hit and how you fixed it.' },
+        { title: 'Key Learnings', list: ['Lesson 1', 'Lesson 2'] },
+        { title: 'Future Improvements', list: ['Add city autocomplete'] },
+      ],
+    },
+  },
+},
+{
+  slug: 'qr-code-generator',
+  name: 'QR Code Generator',
+  image: '/images/tools-image/qr-genaretor.png',
+  description:
+    'Lightweight web app that converts text and URLs into QR codes instantly, with a simple interface and input validation.',
+  categories: ['Web', 'Learning'],
+  color: '#6366f1',
+  year: '2024',
+  technologies: ['HTML5', 'CSS3', 'JavaScript', 'QR Server API'],
+  link: 'https://main--qrcode-genretor.netlify.app/',
+  repo: 'https://github.com/Abu10thahir7-github/QR-Code-Genaretor',
+  caseStudy: {
+    role: 'Frontend Developer',
+    tools: ['HTML5', 'CSS3', 'JavaScript', 'Git'],
+    stack: [
+      { group: 'Frontend', items: ['HTML5', 'CSS3', 'JavaScript'] },
+      { group: 'API', items: ['QR Server API'] },
+      { group: 'Tools & Deployment', items: ['Git', 'GitHub', 'Netlify'] },
+    ],
+    sections: {
+      overview: [
+        {
+          title: 'Introduction',
+          text: 'A lightweight web application that converts text and URLs into QR codes.',
+        },
+        { title: 'Project Type', text: 'Personal project.' },
+        { title: 'My Role', list: ['Frontend development'] },
+      ],
+      development: [
+        {
+          title: 'Key Features',
+          list: [
+            'Generate QR codes from text and URLs',
+            'Simple and user-friendly interface',
+            'Dynamic QR code display',
+            'Input validation and error feedback',
+          ],
+        },
+      ],
+      deployment: [
+        { title: 'Deployment', text: 'Deployed on Netlify.' },
+      ],
+      // conclusion: add a real challenge you hit and what you learned
+    },
+  },
+},
+{
+  slug: 'note-app',
+  name: 'Note App',
+  image: '/images/tools-image/note-web-app.png',   // add a screenshot
+  description: 'TODO: one or two sentences on what the app does.',
+  categories: ['Web', 'Learning'],
+  color: '#f59e0b',
+  year: '2025',                                 // TODO: real year
+  technologies: [],                             // TODO: e.g. ['React', 'CSS']
+  repo: 'https://github.com/Abu10thahir7-github/note---app',
+  link: 'https://abu10thahir7-github.github.io/Notes-App-JavaScript/intex.html',                       // add if it's deployed
+  caseStudy: {
+    role: 'Developer',
+    tools: ['Git', 'GitHub', 'VS Code'],
+    sections: {
+      overview: [
+        { title: 'Introduction', text: 'TODO: what the app is and who it is for.' },
+        { title: 'Project Type', text: 'Personal project.' },
+        { title: 'My Role', list: ['Design and development'] },   // TODO: confirm
+      ],
+      development: [
+        {
+          title: 'Key Features',
+          list: [
+            // TODO: replace with the real features, for example:
+            'Create, edit and delete notes',
+            'Search through notes',
+          ],
+        },
+        { title: 'How It Works', text: 'TODO: how notes are stored and displayed.' },
+      ],
+      conclusion: [
+        { title: 'Challenges & Solutions', text: 'TODO: one real problem you hit and how you fixed it.' },
+        { title: 'Key Learnings', list: [] },                     // TODO
+      ],
+    },
+  },
+},
 ];
 
 export const nav = [
@@ -555,4 +672,6 @@ export const nav = [
   { label: 'Contact', href: '#contact' },
 ];
 
-export const hasCaseStudy = (p: Project) => p.categories.includes('UI/UX');
+export const hasCaseStudy = (p: Project) =>
+  p.categories.includes('UI/UX') || !!p.caseStudy;
+

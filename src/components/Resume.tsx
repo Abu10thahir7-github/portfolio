@@ -35,7 +35,7 @@ export default function Resume() {
     >
       <header className="mb-12">
         <p className="font-mono-tech text-sm text-accent">02 · Background</p>
-        <h2 id="resume-heading" className="mt-2 font-display text-4xl font-bold sm:text-5xl">
+        <h2 id="resume-heading" className="mt-2 font-display text-4xl font-bold sm:text-3xl">
           My <span className="text-accent">Resume</span>
         </h2>
       </header>

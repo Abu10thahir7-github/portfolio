@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from 'next/link';
 import {
   ArrowUpRight,
   Code2,
@@ -7,22 +7,22 @@ import {
   Rocket,
   Building2,
   GraduationCap,
-} from "lucide-react";
-import { serviceList, getServiceBySlug } from "@/lib/services";
+} from 'lucide-react';
+import { serviceList, getServiceBySlug } from '@/lib/services';
 
 // A teaser, not a catalog. The full service list lives on webforges.site —
 // this section (styled to match the "Free Tools" card elsewhere on the
 // page: browser-chrome mock window + highlight grid + "Visit site" strip)
 // just proves the range and sends people there for the rest.
-const WEBFORGES_URL = "https://webforges.site/";
+const WEBFORGES_URL = 'https://webforges.site/';
 
 const highlightSlugs = [
-  "webdevelopment",
-  "ecommerce",
-  "webdesign",
-  "landingpage",
-  "realestate-portal",
-  "elearning-portal",
+  'webdevelopment',
+  'ecommerce',
+  'webdesign',
+  'landingpage',
+  'realestate-portal',
+  'elearning-portal',
 ] as const;
 
 const highlightIcons: Record<(typeof highlightSlugs)[number], typeof Code2> = {
@@ -30,13 +30,13 @@ const highlightIcons: Record<(typeof highlightSlugs)[number], typeof Code2> = {
   ecommerce: ShoppingCart,
   webdesign: Palette,
   landingpage: Rocket,
-  "realestate-portal": Building2,
-  "elearning-portal": GraduationCap,
+  'realestate-portal': Building2,
+  'elearning-portal': GraduationCap,
 };
 
 export default function WeProvideServices() {
   const highlights = highlightSlugs
-    .map((slug) => getServiceBySlug(slug))
+    .map(slug => getServiceBySlug(slug))
     .filter((s): s is NonNullable<typeof s> => Boolean(s));
 
   return (
@@ -45,26 +45,21 @@ export default function WeProvideServices() {
       aria-labelledby="services-heading"
       className="relative overflow-hidden border-y border-white/10  px-2 py-15 sm:px-10 lg:px-16"
     >
-
-
       <div className="relative mx-auto max-w-6xl">
         {/* header */}
         <div className="mb-10">
           <span className="inline-flex items-center gap-2  px-3 py-1 font-mono text-xs uppercase tracking-widest text-accent">
-
             05 &middot; Services
           </span>
           <h2
-
             aria-labelledby="services-heading"
-            className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-5xl"
+            className="mt-4 text-4xl font-bold tracking-tight text-white sm:text-3xl"
           >
             We <span className="text-accent">Provide</span>
           </h2>
           <p className="mt-3 max-w-lg text-sm text-slate-400">
-            Web development runs as its own thing over at Web Forges &mdash;
-            sites, stores, and portals built on React &amp; Node. Here&apos;s
-            a taste of what&apos;s on offer.
+            Web development runs as its own thing over at Web Forges &mdash; sites, stores, and
+            portals built on React &amp; Node. Here&apos;s a taste of what&apos;s on offer.
           </p>
         </div>
 
@@ -82,24 +77,19 @@ export default function WeProvideServices() {
           </div>
 
           <div className="grid gap-px bg-white/5 sm:grid-cols-2 lg:grid-cols-3">
-            {highlights.map((service) => {
+            {highlights.map(service => {
               const Icon = highlightIcons[service.slug as (typeof highlightSlugs)[number]];
               return (
                 <div
                   key={service.slug}
                   className="group bg-[#0a0b0a] p-5 transition-colors flex gap-2 hover:bg-gray-200/5"
                 >
-
                   <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-white/10 text-accent transition-colors group-hover:border-accent">
                     <Icon size={16} />
                   </span>
                   <div>
-                  <h3 className=" text-sm font-semibold text-slate-200">
-                    {service.title}
-                  </h3>
-                  <p className=" text-xs leading-relaxed text-slate-500">
-                    {service.desc}
-                  </p>
+                    <h3 className=" text-sm font-semibold text-slate-200">{service.title}</h3>
+                    <p className=" text-xs leading-relaxed text-slate-500">{service.desc}</p>
                   </div>
                 </div>
               );
